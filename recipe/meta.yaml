@@ -1,5 +1,5 @@
 {% set name = "pymatgen-analysis-diffusion" %}
-{% set version = "2022.7.21" %}
+{% set version = "2023.8.15" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymatgen-analysis-diffusion-{{ version }}.tar.gz
-  sha256: 885ac5e1ef5954c3352f38b4184e2d8a5d22d050ca0d6c8bfe3c3d2d8e5b2b75
+  sha256: d19835320a2cb80ab2160234978a39f4a01994ba7f6eac6de5a4c93e032a9251
 
 build:
   number: 0
