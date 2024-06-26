@@ -23,6 +23,8 @@ requirements:
     - joblib
     - pymatgen >=2022.0.3
     - python >=3.6
+    - ase
+    - seaborn
 
 test:
   imports:
