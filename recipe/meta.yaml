@@ -1,5 +1,5 @@
 {% set name = "pymatgen-analysis-diffusion" %}
-{% set version = "2024.6.24" %}
+{% set version = "2024.6.25.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5d840e0fa74392b14ba65eeb9389529b0e1cfc0563e5e47d9e0b9f875b8fd72f
+  sha256: d81b0f195bb4f1b75324e8e33be4b2021ec17f79733ef7292a6d6b3da31b43ca
 
 build:
   number: 0
@@ -23,6 +23,8 @@ requirements:
     - joblib
     - pymatgen >=2022.0.3
     - python >=3.6
+    - ase
+    - seaborn
 
 test:
   imports:
