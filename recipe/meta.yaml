@@ -1,5 +1,5 @@
 {% set name = "pymatgen-analysis-diffusion" %}
-{% set version = "2024.7.15" %}
+{% set version = "2025.11.15" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 66e628f44127b34d3d652c90aa6b447b282e27daca92c642fda193b38af2288a
+  sha256: 3bfaf42ddedf8af23277d1b09bbb916bf71d5f8631c49878e2a9ff3124300a09
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - numpy >=1.25.0,<2.0
+    - numpy >=1.25.0,<3.0
     - joblib
     - pymatgen >=2024.6.10
     - python >={{ python_min }}
