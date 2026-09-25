@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pymatgen-analysis-diffusion
-  version: "2025.11.15"
+  version: 2026.9.23
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 3bfaf42ddedf8af23277d1b09bbb916bf71d5f8631c49878e2a9ff3124300a09
+  sha256: 2ed4df937606156df3866df25638d04fc4349516abd5258cdb9701d81bd4d9b7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
@@ -25,11 +25,10 @@ requirements:
   run:
     - numpy >=1.25.0,<3.0
     - joblib
-    - pymatgen >=2024.6.10
+    - pymatgen >=2026.9.23
     - python >=${{ python_min }}
     - ase
     - seaborn
-
 tests:
   - python:
       imports:
